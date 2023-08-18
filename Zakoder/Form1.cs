@@ -1002,5 +1002,10 @@ namespace Zakoder
             this.Size = new Size(1051, 610);
             CenterToScreen();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            //не доделано!
+        }
     }
 }

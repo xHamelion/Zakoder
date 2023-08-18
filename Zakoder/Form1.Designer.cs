@@ -49,8 +49,8 @@ namespace Zakoder
             this.panel1 = new System.Windows.Forms.Panel();
             this.CeckB_Prov_Instr = new System.Windows.Forms.CheckBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.CeckB_Save_Instr = new System.Windows.Forms.CheckBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.RTB_Instr = new System.Windows.Forms.RichTextBox();
@@ -269,17 +269,6 @@ namespace Zakoder
             this.label3.TabIndex = 15;
             this.label3.Text = "Шифравка и дешивровка";
             // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1.Location = new System.Drawing.Point(1258, 29);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(68, 32);
-            this.button1.TabIndex = 16;
-            this.button1.Text = "Декод";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // CeckB_Save_Instr
             // 
             this.CeckB_Save_Instr.AutoSize = true;
@@ -290,6 +279,17 @@ namespace Zakoder
             this.CeckB_Save_Instr.TabIndex = 0;
             this.CeckB_Save_Instr.Text = "Сохранять инструкцию дешифровки";
             this.CeckB_Save_Instr.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button1.Location = new System.Drawing.Point(1258, 29);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(68, 32);
+            this.button1.TabIndex = 16;
+            this.button1.Text = "Декод";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label2
             // 
@@ -360,6 +360,7 @@ namespace Zakoder
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "xHamelion - шифратор текста";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.panel1.ResumeLayout(false);
